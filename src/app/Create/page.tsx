@@ -13,13 +13,20 @@ export default function Create() {
   return (
     <>
       <NavBar />
-      <form className={styles.form} onSubmit={(e) => { sendpost(uid, title, content);alert("Post sent") }}>
+      <div className={styles.listTitle}>Create Post</div>
+
+      <form
+        className={styles.form}
+        onSubmit={(e) => {
+          sendpost(uid, title, content);
+          alert("Post sent");
+        }}
+      >
         <h3 className={styles.label}>Title</h3>
         <textarea
           className={styles.textArea}
           name="title"
           id="title"
-          placeholder="Title"
           value={title}
           required
           onChange={(e) => {
@@ -32,7 +39,6 @@ export default function Create() {
           className={styles.textArea}
           name="content"
           id="content"
-          placeholder="content"
           value={content}
           onChange={(e) => {
             setcontent(e.target.value);

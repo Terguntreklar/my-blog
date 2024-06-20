@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "./page.module.css"
 import NavBar from "./NavBar";
 import Posts from "./Posts";
 
@@ -14,6 +15,7 @@ export default async function Blogs() {
   return (
     <>
       <NavBar />
+      <div className={styles.listTitle}>Post Lists</div>
       <Posts key={0} posts={posts} />
     </>
   );

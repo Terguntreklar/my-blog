@@ -46,3 +46,10 @@
   background-color: #ffffff;
   color: black;
 }
+
+.listTitle {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
