@@ -1,0 +1,30 @@
+.bottomNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.bottomNav a {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #444;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, cursor 0.3s ease;
+}
+
+.bottomNav a.selected {
+  background-color: #007BFF;
+  cursor: default;
+}
+
+.bottomNav a.nonselected:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
