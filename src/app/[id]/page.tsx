@@ -4,7 +4,6 @@ import styles from "./page.module.css";
 async function getBlogPostById(id: string) {
   const result: Post = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${id}`,
-    { cache: "no-store" }
   ).then((x) => x.json());
   return result;
 }

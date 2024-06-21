@@ -12,7 +12,7 @@ export default function Posts({ posts }: { posts: Post[] }) {
       {posts.slice(indx * 10, indx * 10 + 10).map((x) => {
         return <Post key={x.id} post={x} />;
       })}
-      <Footer key={indx} length={posts.length} index={indx} indexFn={setindx} />
+      <Footer key={indx} index={indx} indexFn={setindx} />
     </>
   );
 }
@@ -30,11 +30,9 @@ function Post({ post }: { post: Post }) {
 }
 
 function Footer({
-  length,
   index,
   indexFn,
 }: {
-  length: number;
   index: number;
   indexFn: Function;
 }) {
