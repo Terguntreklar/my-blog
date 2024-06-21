@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styles from "./page.module.css"
 import NavBar from "./NavBar";
 import Posts from "./Posts";
