@@ -43,6 +43,7 @@ function Footer({
   numbers.map((x) => {
     Btns.push(
       <a
+        key={x}
         className={x == index ? styles.selected : styles.nonselected}
         onClick={(e) => indexFn(x)}
       >
